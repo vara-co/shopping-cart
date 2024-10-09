@@ -4,7 +4,9 @@ Project 3: Shopping Cart Project </h1>
 <br/>
 by Laura Vara</h2><br/>
 
-W  O   R   K         I   N        P  R  O  G  R  E  S  S
+
+W  O   R   K  <br/>      I   N <br/>        P  R  O  G  R  E  S  S<br/> 
+
 
 # Shopping Cart Functionality
 
