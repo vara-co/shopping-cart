@@ -1,3 +1,11 @@
+<h1 align="center">UDACITY Front End Web Development Nanodegree<br/>
+Project 3: Shopping Cart Project </h1>
+<h2 align="center">Using JavaScript<br/>
+<br/>
+by Laura Vara</h2><br/>
+
+
+
 # Shopping Cart Functionality
 
 You will be creating the core functionality used for a storefront application. The visual of the storefront as well as the JavaScript necessary to connect the code you will write, to that visual have already been created.
