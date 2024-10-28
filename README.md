@@ -144,3 +144,10 @@ Step 7: [Optional] Add extra features
 ## License
 
 [License](LICENSE.txt)
+
+## References
+
+### Images:
+- Srawaberries: https://pixabay.com/photos/fruit-strawberry-organic-berry-6808366/
+- Cherries: https://pixabay.com/photos/cherries-fruits-ripe-red-fresh-1534063/
+- Oranges: https://pixabay.com/photos/fruit-oranges-juice-organic-6983145/
