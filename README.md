@@ -6,6 +6,9 @@ by Laura Vara</h2>
 <h2 align="center"> Starter code for the Intro to JavaScript I Project created by Rachel Manning<br/>
 Shopping Cart Functionality</h2>
 
+![image](https://github.com/user-attachments/assets/e0da55ab-14e2-4a4e-ae08-db9122fc8973)
+
+
 You will be creating the core functionality used for a storefront application. The visual of the storefront as well as the JavaScript necessary to connect the code you will write, to that visual have already been created.
 
 Shopping carts are a fantastic tool to practice JavaScript fundamentals.
