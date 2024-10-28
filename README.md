@@ -145,6 +145,11 @@ Step 7: [Optional] Add extra features
 [License](LICENSE.txt)
 
 ## References
+### Documentation:
+- Arrays: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+- Functions: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+- Helper Functions: https://www.geeksforgeeks.org/javascript-helper-methods/
+- Comparison Operators JS: https://www.codecademy.com/article/learn-javascript-control-flow-control-flow
 
 ### Images:
 - Srawaberries: https://pixabay.com/photos/fruit-strawberry-organic-berry-6808366/
