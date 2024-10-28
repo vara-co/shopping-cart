@@ -2,13 +2,9 @@
 Project 3: Shopping Cart Project </h1>
 <h2 align="center">Using JavaScript<br/>
 <br/>
-by Laura Vara</h2><br/>
-
-
-W  O   R   K  <br/>      I   N <br/>        P  R  O  G  R  E  S  S<br/> 
-
-
-# Shopping Cart Functionality
+by Laura Vara</h2>
+<h2 align="center"> Starter code for the Intro to JavaScript I Project created by Rachel Manning<br/>
+Shopping Cart Functionality</h2>
 
 You will be creating the core functionality used for a storefront application. The visual of the storefront as well as the JavaScript necessary to connect the code you will write, to that visual have already been created.
 
