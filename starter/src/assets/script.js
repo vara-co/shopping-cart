@@ -1,7 +1,5 @@
 /* Create an array named products which you will use to add all of your product object literals that you create in the next step. */
 
-const products = [];
-
 /* Create 3 or more product objects using object literal notation 
    Each product should include five properties
    - name: name of product (string)
@@ -10,39 +8,34 @@ const products = [];
    - productId: unique id for the product (number)
    - image: picture of product (url string)
 */
-
-const cartonOfCherries = {
-  name: "Carton of Cherries",
-  price: 4,
-  quantity: 0,
-  productId: 1111,
-  image: "https://github.com/udacity/cd2073-intro-to-js-1-project-starter/blob/main/starter/src/images/cherry.jpg?raw=true"
-};
-
-const cartonOfStrawberries = {
-  name: "Carton of Strawberries",
-  price: 5,
-  quantity: 0,
-  productId: 2222,
-  image: "https://github.com/udacity/cd2073-intro-to-js-1-project-starter/blob/main/starter/src/images/strawberry.jpg?raw=true"
-};
-
-const bagOfOranges = {
-  name: "Bag of Oranges",
-  price: 10,
-  quantity: 0,
-  productId: 3333,
-  image: "https://github.com/udacity/cd2073-intro-to-js-1-project-starter/blob/main/starter/src/images/orange.jpg?raw=true"
-};
-
+const products = [
+    {
+    name: "Carton of Cherries",
+    price: 4,
+    quantity: 0,
+    productId: 1111,
+    image: "https://github.com/udacity/cd2073-intro-to-js-1-project-starter/blob/main/starter/src/images/cherry.jpg?raw=true"
+  },
+  {
+    name: "Carton of Strawberries",
+    price: 5,
+    quantity: 0,
+    productId: 2222,
+    image: "https://github.com/udacity/cd2073-intro-to-js-1-project-starter/blob/main/starter/src/images/strawberry.jpg?raw=true"
+  },
+  {
+    name: "Bag of Oranges",
+    price: 10,
+    quantity: 0,
+    productId: 3333,
+    image: "https://github.com/udacity/cd2073-intro-to-js-1-project-starter/blob/main/starter/src/images/orange.jpg?raw=true"
+  },
+];
 /* Images provided in /images folder. All images from Unsplash.com
    - cherry.jpg by Mae Mu
    - orange.jpg by Mae Mu
    - strawberry.jpg by Allec Gomes
 */
-
-// Adding products to the array 
-products.push(cartonOfCherries, cartonOfStrawberries, bagOfOranges);
 
 /* Declare an empty array named cart to hold the items in the cart */
 
