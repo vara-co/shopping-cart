@@ -14,21 +14,21 @@ const products = [
     price: 4,
     quantity: 0,
     productId: 1111,
-    image: "https://github.com/udacity/cd2073-intro-to-js-1-project-starter/blob/main/starter/src/images/cherry.jpg?raw=true"
+    image: "https://github.com/vara-co/shopping-cart/blob/main/starter/src/images/cherriescarton.jpg?raw=true"
   },
   {
     name: "Carton of Strawberries",
     price: 5,
     quantity: 0,
     productId: 2222,
-    image: "https://github.com/udacity/cd2073-intro-to-js-1-project-starter/blob/main/starter/src/images/strawberry.jpg?raw=true"
+    image: "https://github.com/vara-co/shopping-cart/blob/main/starter/src/images/strawberriescarton.jpg?raw=true"
   },
   {
     name: "Bag of Oranges",
     price: 10,
     quantity: 0,
     productId: 3333,
-    image: "https://github.com/udacity/cd2073-intro-to-js-1-project-starter/blob/main/starter/src/images/orange.jpg?raw=true"
+    image: "https://github.com/vara-co/shopping-cart/blob/main/starter/src/images/orangessac2.jpg?raw=true"
   },
 ];
 /* Images provided in /images folder. All images from Unsplash.com
@@ -41,6 +41,22 @@ const products = [
 
 const cart = [];
 
+// Helper function - finding products by productId
+function findProductsById(productId){
+  return products.find(item => item.productId === productId);
+}
+
+// Helper function - finding product index in cart
+function findProductInCart(productId) {
+  return cart.find(item => item.productId ===productId);
+}
+
+// Helper function - finding Product in Cart by Index
+function findProductCartByIndex (productId) {
+  return cart.findIndex(item => item.productId === productId);
+}
+
+
 /* Create a function named addProductToCart that takes in the product productId as an argument
   - addProductToCart should get the correct product based on the productId
   - addProductToCart should then increase the product's quantity
@@ -48,14 +64,14 @@ const cart = [];
 */
 
 function addProductToCart(productId) {
-  // finding product based on productID
-  const product = products.find(item => item.productId === productId);
+  // finding product based on productID using helper function
+  const product = findProductsById(productId); 
 
   // Is the product in the products array
   if (product) {
     product.quantity += 1;
     // check if product is in cart, otherwise to push it
-    const productInCart = cart.find(item => item.productId === productId);
+    const productInCart = findProductInCart(productId);
 
     // if not in cart, push product
     if (!productInCart){
@@ -70,8 +86,8 @@ function addProductToCart(productId) {
 */
 
 function increaseQuantity(productId) {
-  // finding product by productId
-  const product = products.find(item => item.productId === productId);
+  // finding product based on productID using helper function
+  const product = findProductsById(productId); 
 
   // check if product in the products array, and if so, increment by one
   if (product) {
@@ -86,8 +102,8 @@ function increaseQuantity(productId) {
 */
 
 function decreaseQuantity(productId) {
-  // finding product in array by productId
-  const product = products.find(item => item.productId ===productId);
+  // finding product based on productID using helper function
+  const product = findProductsById(productId); 
 
   // Check if product in the prod array, and if so, decrease by 1
   if (product) {
@@ -97,7 +113,7 @@ function decreaseQuantity(productId) {
 
     // remove from cart if less than 0 products
     if (product.quantity === 0) {
-      const productIndex = cart.findIndex(item => item.productId === productId);
+      const productIndex = findProductCartByIndex (productId);
       if (productIndex !== -1) {
         cart.splice(productIndex, 1);
       }
@@ -112,15 +128,15 @@ function decreaseQuantity(productId) {
 */
 
 function removeProductFromCart(productId) {
-  // find product in array productId
-  const product = products.find(item => item.productId === productId);
+  // finding product based on productID using helper function
+  const product = findProductsById(productId); 
 
   // if product exists, then
   if (product) {
     product.quantity = 0;
 
     // find and remove from cart
-    const productIndex = cart.findIndex(item => item.productId === productId);
+    const productIndex = findProductCartByIndex (productId);
     if (productIndex !== -1) {
       cart.splice(productIndex, 1);
     }
