@@ -150,7 +150,7 @@ function pay(amount) {
   // Remaining balance calculation
   const remaining = totalPaid - ttlCost;
 
-  // Conditional
+  // Conditional to calculate positive or negative balance
   if (remaining < 0) {
     return remaining;
   } else {
