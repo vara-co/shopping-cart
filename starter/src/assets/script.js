@@ -131,15 +131,38 @@ function emptyCart() {
 
 // Function PAY taking amount as an argument.
 // This will determine the difference that needs to be returned to the shopper, or if they still owe
+
+// Variable to track total payment
+let totalPaid = 0;
+
 function pay(amount) {
-  // total price in cart
+  // Avoiding accepting negative amounts or zero
+  if (amount <= 0) {
+    return "Invalid payment.";
+  }
+
+  // Add amount to total amount paid
+  totalPaid += amount;
+
+  // Total in cart
   const ttlCost = cartTotal();
 
-  // checking balance
-  const balance = amount - ttlCost;
+  // Remaining balance calculation
+  const remaining = totalPaid - ttlCost;
 
-  // if balance positive, give change. If balance negative, needs to pay.
-  return balance;
+  // Conditional
+  if (remaining < 0) {
+    return remaining;
+  } else {
+    const change = remaining;
+    totalPaid = 0;
+    emptyCart(); // Clear cart when payment completed
+
+    // Find out the change if any
+    return change 
+
+  }
+
 }
 
 
